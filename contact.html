@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steven Hairston</title>
+  <link rel="icon" type="image/png" href="./img/favicon-32x32.png" />
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+  <header class="page-header">
+    <!-- Add your logo here -->
+    <img src="img/logo.svg" alt="steven hairston logo" class="page-header__item">
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item"> Work Experience</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="contact-item">
+    <h1>Contact</h1>
+    <h2>Steven Hairston</h2>
+    <p>4709 Maccorkle Ave SE 3A</p>
+    <p>Charleston, WV 25312</p>
+    <p>United States of America</p>
+    <br>
+    Tel <a href="tel:+1 336 883 5731"> +1 336 883 5731</a>
+    <br>
+    <a href="mailto:hairston531@gmail.com"> Email: hairston531@gmail.com</a>
+    <br>
+    <a href="#"> Take a look at my code!</a>
+  </div>
+  <div>
+    <h3>Please enter contact information.</h3>
+
+    <form action="" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">E-mail: </label>
+      <input type="email" id="contact-email" required>
+
+      <label class="standard-label" for="contact-tel">Telephone: </label>
+      <input type="tel" id="contact-tel" required pattern="/d{3}[/-]/d{3}[/-]/d{4}">
+
+      <label class="standard-label" for="contact-submit">Message: </label>
+      <textarea maxlength="240" id="contact-submit" required></textarea>
+      <input type="submit" value="Send Message">
+
+    </form>
+
+
+  </div>
+  <footer>
+    <p>Find me on</p>
+    <img src="img/github.svg" alt="Github">
+    <img src="img/twit.svg" alt="Twitter">
+    <img src="img/linkedin.svg" alt="LinkedIn">
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
+
+</body>
+
+</html>
