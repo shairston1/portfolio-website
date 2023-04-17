@@ -11,6 +11,18 @@ Text Color: (white): #ffffff
 Primary Color: (blue):#043051
 Secondary Color: (yellow) :#facd42
 */
+:root {
+  --primary-color: #2c2c2c;
+  --secondary-color: #facd42;
+  --tertiary-color: #9c4855;
+  --text-color: #fff;
+  --light-gray: #bcbcbc;
+  --body-fontsize: 16px;
+  --header-weight: 700;
+  --h1-fontsize: 30px;
+  --h2-fontsize: 24px;
+  --h3-fontsize: 18px;
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -18,35 +30,35 @@ Secondary Color: (yellow) :#facd42
 }
 
 body {
-  background-color: #043051;
+  background-color: var(--primary-color);
   font-family: 'Playfair Display', serif;
-  color: #fff;
+  color: var(--text-color);
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--body-fontsize);
   line-height: 1.6;
 }
 
 h1 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: var(--h1-fontsize);
+  font-weight: var(--header-weight);
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: var(--h2-fontsize);
+  font-weight: var(--header-weight);
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: var(--h3-fontsize);
+  font-weight: var(--header-weight);
 }
 
 a {
-  color: #043051;
+  color: var(--tertiary-color);
 }
 
 a:visited {
-  color: #facd42;
+  color: var(--secondary-color);
 }
 
 a:hover,
@@ -57,14 +69,14 @@ a:focus {
 }
 
 a:active {
-  color: #9c4855;
+  color: var(--tertiary-color);
 }
 
 button {
   border: none;
   font-family: inherit;
-  background-color: #facd42;
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -81,8 +93,8 @@ button:focus {
 }
 
 .button_secondary {
-  background-color: #facd42;
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .button_secondary:hover,
@@ -180,7 +192,7 @@ button:focus {
 }
 
 .project-grid__item {
-  background-color: #bcbcbc;
+  background-color: var(--light-gray);
   width: auto;
   min-height: auto;
   margin: 0;
@@ -194,27 +206,13 @@ button:focus {
   grid-row: 1 / 3;
 }
 
-.button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: #9c4855;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-
+.button,
 button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #9c4855;
-  color: #fff;
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
